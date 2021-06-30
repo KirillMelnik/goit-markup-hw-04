@@ -127,12 +127,20 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  fill: var(--secondary-color);
   padding: 32px 0;
+  display: flex;
+  align-items: center;
 }
 
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.contacts-icon {
+  margin-right: 10px;
 }
 
 /* ==========HERO============ */
@@ -211,10 +219,6 @@ p {
   margin-left: 30px;
 }
 
-/* .advantage-item:not(:last-child) {
-  margin-right: 30px;
-} */
-
 .advantage-section {
   padding: 94px 0;
 }
@@ -230,6 +234,17 @@ p {
 .advantage-desc {
   line-height: 1.71;
   color: var(--secondary-color);
+}
+
+.advantage-icon-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-team);
+  border-radius: 4px;
 }
 
 /* =============techskills======== */
@@ -308,6 +323,34 @@ p {
   color: var(--secondary-color);
 }
 
+.socials-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white-color);
+  fill: var(--socials-color);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
 /* ============CLIENTS=========== */
 
 .clients-section {
@@ -322,11 +365,44 @@ p {
   color: var(--black-color);
 }
 
+.clients-list {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: var(--margin-cards);
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--socials-color);
+  border-radius: 4px;
+  background-color: var(--white-color);
+  fill: var(--socials-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+  outline: none;
+}
+
 /* =============FOOTER=========== */
 
 .page-footer {
   background-color: var(--hero-color);
   padding: 60px 0;
+}
+
+.footer-flex {
+  display: flex;
 }
 
 .footer-logo {
