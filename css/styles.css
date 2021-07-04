@@ -349,6 +349,7 @@ p {
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
+  outline: none;
 }
 
 /* ============CLIENTS=========== */
@@ -403,6 +404,15 @@ p {
 
 .footer-flex {
   display: flex;
+  align-items: baseline;
+}
+
+.page-footer-thumb {
+  margin-right: 70px;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .footer-logo {
@@ -443,6 +453,38 @@ p {
 
 .current {
   color: var(--accent-color);
+}
+
+.join-desc {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.join-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--backg-footer-links);
+  fill: var(--white-color);
+  border-radius: 50%;
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+  outline: none;
 }
 
 /* ============== PORTFOLIO ============ */
@@ -494,6 +536,13 @@ p {
   margin-left: var(--margin-cards);
   flex-basis: calc(100% / 3 - var(--margin-cards));
   outline: 1px solid var(--color-line);
+}
+
+.portfolio-cards-item:focus,
+.portfolio-cards-item:hover {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .container-cards-item {
