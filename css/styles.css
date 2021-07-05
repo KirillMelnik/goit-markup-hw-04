@@ -127,7 +127,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  fill: var(--secondary-color);
+  fill: currentColor;
   padding: 32px 0;
   display: flex;
   align-items: center;
@@ -136,7 +136,7 @@ p {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 .contacts-icon {
@@ -213,7 +213,6 @@ p {
 }
 
 .advantage-item {
-  /* width: 270px; */
   flex-basis: calc((100% - 4 * 30px) / 4);
   margin-top: 30px;
   margin-left: 30px;
@@ -241,10 +240,10 @@ p {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
   background-color: var(--background-team);
   border-radius: 4px;
+  width: 270px;
+  height: 120px;
 }
 
 /* =============techskills======== */
@@ -330,6 +329,11 @@ p {
   margin-top: 16px;
 }
 
+.socials-item {
+  width: 44px;
+  height: 44px;
+}
+
 .socials-item:not(:last-child) {
   margin-right: 10px;
 }
@@ -338,8 +342,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   background-color: var(--white-color);
   fill: var(--socials-color);
   border-radius: 50%;
@@ -372,6 +376,11 @@ p {
   margin-top: 50px;
 }
 
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
 .clients-item:not(:last-child) {
   margin-right: var(--margin-cards);
 }
@@ -380,8 +389,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid var(--socials-color);
   border-radius: 4px;
   background-color: var(--white-color);
@@ -409,10 +418,6 @@ p {
 
 .page-footer-thumb {
   margin-right: 70px;
-}
-
-.join-item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .footer-logo {
@@ -470,12 +475,21 @@ p {
   justify-content: space-around;
 }
 
+.join-item {
+  width: 44px;
+  height: 44px;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .join-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   background-color: var(--backg-footer-links);
   fill: var(--white-color);
   border-radius: 50%;
