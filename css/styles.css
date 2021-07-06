@@ -167,6 +167,8 @@ p {
     ),
     url(../images/background-hero/img1.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -213,7 +215,7 @@ p {
 }
 
 .advantage-item {
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  flex-basis: calc((100% - 4 * var(--margin-cards)) / 4);
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -242,7 +244,6 @@ p {
   margin-bottom: 30px;
   background-color: var(--background-team);
   border-radius: 4px;
-  width: 270px;
   height: 120px;
 }
 
@@ -416,7 +417,7 @@ p {
   align-items: baseline;
 }
 
-.page-footer-thumb {
+.page-footer-thumb:not(:last-child) {
   margin-right: 70px;
 }
 
@@ -435,6 +436,7 @@ p {
 }
 
 .adress-text {
+  display: block;
   font-style: normal;
   line-height: 1.71;
   color: var(--white-color);
@@ -472,7 +474,6 @@ p {
 
 .join-list {
   display: flex;
-  justify-content: space-around;
 }
 
 .join-item {
@@ -552,11 +553,15 @@ p {
   outline: 1px solid var(--color-line);
 }
 
-.portfolio-cards-item:focus,
-.portfolio-cards-item:hover {
-  border: 1px solid #eeeeee;
+.porfolio-cards-link {
+  display: block;
+}
+
+.porfolio-cards-link:focus,
+.porfolio-cards-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .container-cards-item {
